@@ -1,0 +1,8 @@
+es.egv.sherpa.example.common.exception
+es.egv.sherpa.example.dal.database
+es.egv.sherpa.example.dal.database.impl
+es.egv.sherpa.example.dal.geonames
+es.egv.sherpa.example.dal.geonames.impl
+es.egv.sherpa.example.ejb
+es.egv.sherpa.example.model
+es.egv.sherpa.example.services.rest
