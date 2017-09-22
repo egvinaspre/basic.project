@@ -1,0 +1,49 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>SherpaBusinessEJB</artifactId>
+	<packaging>ejb</packaging>
+	<parent>
+		<groupId>es.egv.sherpa.example</groupId>
+		<artifactId>SherpaAITAPOM</artifactId>
+		<version>1.0.0</version>
+		<relativePath>../SherpaAITAPOM</relativePath>
+	</parent>
+	<dependencies>
+		<dependency>
+			<groupId>org.glassfish</groupId>
+			<artifactId>javax.ejb</artifactId>
+			<version>3.1.1</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>es.egv.sherpa.example</groupId>
+			<artifactId>SherpaModelJAR</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>es.egv.sherpa.example</groupId>
+			<artifactId>SherpaCommonsJAR</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>es.egv.sherpa.example</groupId>
+			<artifactId>SherpaDALEJB</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-ejb-plugin</artifactId>
+				<version>3.0.0</version>
+				<configuration>
+					<ejbVersion>3.1</ejbVersion>
+					<generateClient>true</generateClient>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
